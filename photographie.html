@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PHOTOGRAPHIE - WANGJIAYING PRODUCTION</title>
+    <link rel="stylesheet" href="css/lightgallery.min.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <style>
+    .lg-backdrop{
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .lg-outer .lg-thumb{
+        margin: 0 auto -5px;
+    }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+          <div class="row author-tag">
+              <a href="index.html">
+              <div class="extra"></div>
+              <div class="name">
+                  <p>Wang JiaYing</p>
+              </div>
+              </a>
+          </div>
+          <div class="row navbar">
+              <ul class="nav clearfix">
+                  <li class="text-left"><a href="index.html">les travaux personnels</a></li>
+                  <li class="text-center"><a href="project.html">le projet D’etudes</a></li>
+                  <li class="text-center"><a href="profile.html">Profils Individuels</a></li>
+                  <li class="text-right"><a href="imaginaire.html">le musee imaginaire</a></li>
+              </ul>
+              <ul class="subnav clearfix">
+                  <li class="fl text-left"><a href="tout.html">tout</a></li>
+                  <li class="fl text-left"><a href="sculpture.html">sculpture</a></li>
+                  <li class="fl text-center"><a href="ceramique.html">ceramique</a></li>
+                  <li class="fl text-center"><a href="interaction.html">interaction</a></li>
+                  <li class="fl text-right"><a class="active" href="javascript:;">photographie</a></li>
+                  <li class="fl text-right"><a href="graphique.html">graphique</a></li>
+              </ul>
+          </div>
+          <div class="row c-content clearfix">
+              <div class="c-item fl">
+                    <div class="w-img">
+                        <div class="lightgallery" id="lightgallery1">
+                            <a href="img/p-d1.jpg" data-sub-html="Indecis (2016)"><img src="img/p-list1.jpg" /></a>
+                        </div>
+                    </div>
+                  <div class="s-info">
+                      <p class="sp1">Indecis</p>
+                      <p class="sp3">2016</p>
+                  </div>
+              </div>
+              <div class="c-item fl">
+                  <div class="w-img">
+                      <div class="lightgallery" id="lightgallery3">
+                          <a href="img/p-d3-1.jpg" data-sub-html="Clair (2015)"><img src="img/p-list3-1.jpg" /></a>
+                          <a href="img/p-d3-2.jpg" data-sub-html="Clair (2015)"><img src="img/p-d3-2.jpg" /></a>
+                          <a href="img/p-d3-3.jpg" data-sub-html="Clair (2015)"><img src="img/p-d3-3.jpg" /></a>
+                          <a href="img/p-d3-4.jpg" data-sub-html="Clair (2015)"><img src="img/p-d3-4.jpg" /></a>
+                      </div>
+                  </div>
+                  <div class="s-info">
+                      <p class="sp1">Clair</p>
+                      <p class="sp3">2015</p>
+                  </div>
+              </div>
+              <div class="c-item fl">
+                  <div class="w-img">
+                      <div class="lightgallery" id="lightgallery4">
+                          <a href="img/p-d4-1.jpg" data-sub-html="departement de la peinture à l’huile(2013)"><img src="img/p-list4-1.jpg" /></a>
+                          <a href="img/p-d4-2.jpg" data-sub-html="departement de la peinture à l’huile(2013)"><img src="img/p-d4-2.jpg" /></a>
+                          <a href="img/p-d4-3.jpg" data-sub-html="departement de la peinture à l’huile(2013)"><img src="img/p-d4-3.jpg" /></a>
+                          <a href="img/p-d4-4.jpg" data-sub-html="departement de la peinture à l’huile(2013)"><img src="img/p-d4-4.jpg" /></a>
+                      </div>
+                  </div>
+                  <div class="s-info">
+                      <p class="sp1">Departement de la peinture à l’huile</p>
+                      <p class="sp3">2013</p>
+                  </div>
+              </div>
+              <div class="c-item fl">
+                  <div class="w-img">
+                      <div class="lightgallery" id="lightgallery2">
+                          <a href="img/p-d2-1.jpg" data-sub-html="La rue(2011)"><img src="img/p-list2-1.jpg" /></a>
+                          <a href="img/p-d2-2.jpg" data-sub-html="La rue(2011)"><img src="img/p-list2-2.jpg" /></a>
+                      </div>
+                  </div>
+                  <div class="s-info">
+                      <p class="sp1">La rue</p>
+                      <p class="sp3">2011</p>
+                  </div>
+              </div>
+
+          </div>
+          <div class="stampwrap">
+              <div class="stamp"></div>
+          </div>
+      </div>
+
+      <script src="js/jquery-3.1.1.min.js"></script>
+      <script src="js/lightgallery.min.js"></script>
+      <!-- lightgallery plugins -->
+      <script src="js/lg-thumbnail.min.js"></script>
+      <script>
+      $(document).ready(function() {
+          lightGallery(document.querySelector('#lightgallery1'), {
+              thumbnail:true,
+              currentPagerPosition: 'middle',
+              download: false,
+              hideControlOnEnd:true,
+              loop:false
+          });
+          lightGallery(document.querySelector('#lightgallery2'), {
+              thumbnail:true,
+              currentPagerPosition: 'middle',
+              download: false,
+              hideControlOnEnd:true,
+              loop:false
+          });
+          lightGallery(document.querySelector('#lightgallery3'), {
+              thumbnail:true,
+              currentPagerPosition: 'middle',
+              download: false,
+              hideControlOnEnd:true,
+              loop:false
+          });
+          lightGallery(document.querySelector('#lightgallery4'), {
+              thumbnail:true,
+              currentPagerPosition: 'middle',
+              download: false,
+              hideControlOnEnd:true,
+              loop:false
+          });
+      });
+      </script>
+  </body>
+</html>

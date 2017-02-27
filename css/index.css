@@ -1,0 +1,386 @@
+html, body, div, p, span, label, img, a, ol, ul, dl, dt, dd, li, table, tr, td, th, tbody, thead, tfoot, form, fieldset, legent, h1, h2, h3, h4, h5, h6, strong, b, em, blockquote, cite, pre, code, hr, br, input, button, textarea,article, aside, details, figcaption, figure, footer, header, group, menu, nav, section {-webkit-box-sizing: border-box; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0,0,0,0); border: 0; outline: none; padding:0px; margin:0px; }
+a{text-decoration: none;}
+ul, li{list-style: none;}
+
+@font-face {
+    font-family: "Gurmukhi";
+    src: url(font/Gurmukhi.ttf);
+}
+
+body{
+    font-family: "Century Gothic";
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix{overflow: hidden;}
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+}
+.stampwrap{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-top: 60px;
+}
+.stamp{
+    position: absolute;
+    top: 0;
+    /*top: 65px;*/
+    right: 0;
+    width: 38px;
+    height: 38px;
+    background-image: url(../img/stamp.png);
+    background-size: 38px 38px;
+}
+.author{
+    margin: 0 auto;
+    width: 180px;
+}
+.author-tag{
+    position: relative;
+    margin: 0 auto;
+    width: 284px;
+}
+/*.author-tag::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 65px;
+    right: -30px;
+    background-image: url(../img/entericon.png);
+    background-size: 20px 20px;
+}*/
+
+.banner img, .avatar img{
+    width: 100%;
+    vertical-align: bottom;
+}
+.name{
+    position: relative;
+    overflow: hidden;
+}
+.name p{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    font-family: "Century Gothic";
+    overflow: hidden;
+    text-align: justify;
+    text-align-last: justify;
+    text-transform: uppercase;
+    background-color: #6d4933;
+    color: #fff;
+}
+.name p::after{
+    display: inline-block;
+    content: '';
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+}
+
+.author-tag .name p{
+    width: 292px;
+    margin-right: -8px;
+    letter-spacing: 8px;
+}
+
+
+.navbar{
+    position: relative;
+    margin-top: 30px;
+}
+.nav li{
+    float: left;
+    width: 25%;
+    height: 48px;
+    line-height: 48px;
+}
+.nav a{
+    color: #6d4933;
+    font-size: 20px;
+    font-family: "Gurmukhi";
+    text-transform: uppercase;
+}
+.nav>li.active>a{
+    border-bottom: 2px solid #c7723e;
+}
+.index-body .nav>li.active>a{
+    border-bottom: 0;
+}
+.nav>li.active>a, .nav a.active{
+    color: #c7723e;
+}
+.nav>li>a {
+    padding: 10px 0;
+}
+.nav>li>a:hover{
+    color: #c7723e;
+}
+.nav>li:first-child>a{
+    text-align: left;
+}
+.nav>li:last-child>a{
+    text-align: right;
+}
+
+.extend_nav{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 48px;
+    width: 25%;
+    height: 270px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(199, 114, 62, 0.3);
+    z-index: 99;
+}
+.extend_nav li{
+    padding: 0 20px;
+    width: 100%;
+    height: 45px;
+}
+.extend_nav li a{
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    font-family: "Gurmukhi";
+    color: #6d4933;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(199, 114, 62, 0.3);
+}
+.extend_nav li:last-child a{
+    border-bottom: 0;
+}
+.extend_nav li a.active{
+    color: #c7723e;
+}
+.extend_nav li a:hover{
+    color: #c7723e;
+    text-decoration: none;
+}
+.extend_nav li a:visited, .extend_nav li a:active, .extend_nav li a:focus{
+    text-decoration: none;
+}
+
+.content{
+    margin: 30px auto;
+}
+.con-main {
+    width: 1200px;
+    height: 350px;
+}
+.items{
+    font-size: 0;
+}
+.works{
+    display: inline-block;
+    padding: 0;
+}
+.work1, .work3{
+    width: 346px;
+    height: 346px;
+}
+.work2{
+    margin: 0 8px;
+    width: 492px;
+    height: 346px;
+}
+.works .w-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.works img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: auto;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+
+.extra{
+    height: 55px;
+    background-color: #6d4933;
+}
+.s-content{
+    width: 1230px;
+    margin: 25px -15px;
+}
+.s-item{
+    width: 380px;
+    margin: 40px 15px 0;
+}
+
+.c-content{
+    width: 1224px;
+    margin: 25px -12px;
+}
+.c-item{
+    width: 282px;
+    min-height: 366px;
+    margin: 20px 12px;
+}
+.subnav{
+    border-bottom: 1px solid #bfbfbf;
+}
+.subnav li{
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+}
+.subnav li a{
+    color: #6d4933;
+    font-size: 16px;
+    font-family: "Gurmukhi";
+    text-transform: uppercase;
+}
+.subnav li:nth-child(3) a{
+    padding-right: 30px;
+}
+.subnav li:nth-child(4) a{
+    padding-left: 30px;
+}
+.subnav li a.active{
+    color: #c7723e;
+}
+.c-info p, .s-info p{
+    line-height: 1.5;
+    font-family: "Century Gothic";
+}
+.c-info .cp1, .s-info .sp1{
+    font-size: 20px;
+    color: #000;
+}
+.c-info .cp2, .c-info .cp3, .s-info .sp2, .s-info .sp3{
+    font-size: 16px;
+    color: #6f6f6f;
+}
+
+.c-item .w-img{
+    width: 282px;
+    height: 282px;
+    overflow: hidden;
+}
+.w-img img{
+    width: 100%;
+}
+
+.d-content{
+    margin: 25px auto;
+}
+.de-title{
+    font-size: 22px;
+    line-height: 2;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6d4933;
+}
+.desc1{
+    font-size: 18px;
+    font-family: "Century Gothic";
+    line-height: 1.5;
+    color: #707070;
+}
+.desc1 span{
+    color: #c7723e;
+}
+.title-line{
+    margin-top: 15px;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+}
+.title-line::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 100%;
+    height: 1px;
+    background-color: #c7723e;
+    z-index: -1;
+}
+.title-line span{
+    padding: 0 10px;
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    background-color: #fff;
+    color: #c7723e;
+    font-size: 20px;
+    z-index: 99;
+}
+.desc2{
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 2;
+    color: #707070;
+}
+.detail-img{
+    margin-top: 15px;
+    padding: 0 100px;
+}
+.detail-img img{
+    width: 100%;
+}
+
+/*imaginaire page*/
+.article{
+    padding: 20px 0;
+    border-bottom: 1px solid #bfbfbf;
+}
+.article:last-child{
+    border-bottom: 0;
+}
+/*.article:first-child{
+    border-top: 1px solid #bfbfbf;
+}*/
+.a-title{
+    margin-top: 20px;
+    line-height: 40px;
+    color: #6d4933;
+}
+.a-t1{
+    font-weight: bold;
+    font-size: 20px;
+}
+.a-text{
+    font-size: 16px;
+    line-height: 2;
+}
+.a-pic{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
