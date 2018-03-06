@@ -43,7 +43,7 @@
               </ul>
           </div>
           <div class="row c-content clearfix">
-              <div class="c-item fl">
+              <!-- <div class="c-item fl">
                     <div class="w-img">
                         <div class="lightgallery" id="lightgallery1">
                             <a href="img/g-d1.JPG" data-sub-html="envoler(2014)"><img src="img/g-list1.jpg" /></a>
@@ -53,7 +53,7 @@
                       <p class="sp1">Envoler</p>
                       <p class="sp3">2014</p>
                   </div>
-              </div>
+              </div> -->
               <div class="c-item fl">
                   <div class="w-img">
                       <div class="lightgallery" id="lightgallery4">
@@ -62,7 +62,7 @@
                       </div>
                   </div>
                   <div class="s-info">
-                      <p class="sp1">Couleur</p>
+                      <p class="sp1">Couleur (2 pièces)</p>
                       <p class="sp3">2013</p>
                   </div>
               </div>
@@ -81,12 +81,22 @@
                   <div class="w-img">
                       <div class="lightgallery" id="lightgallery3">
                           <a href="img/g-d3-1.jpg" data-sub-html="Esquisse des personages(2011)"><img src="img/g-list3-1.jpg" /></a>
-                          <a href="img/g-d3-2.JPG" data-sub-html="Esquisse des personages(2011)"><img src="img/g-d3-2.JPG" /></a>
-                          <a href="img/g-d3-3.JPG" data-sub-html="Esquisse des personages(2011)"><img src="img/g-d3-3.JPG" /></a>
                       </div>
                   </div>
                   <div class="s-info">
-                      <p class="sp1">Esquisse des personages</p>
+                      <p class="sp1">Esquisse de fille</p>
+                      <p class="sp3">2011</p>
+                  </div>
+              </div>
+              <div class="c-item fl">
+                  <div class="w-img">
+                      <div class="lightgallery" id="lightgallery5">
+                          <a href="img/g-d3-3.JPG" data-sub-html="Esquisse de personnage"><img src="img/g-d3-3.JPG" /></a>
+                          <a href="img/g-d3-2.JPG" data-sub-html="Esquisse de personnage"><img src="img/g-d3-2.JPG" /></a>
+                      </div>
+                  </div>
+                  <div class="s-info">
+                      <p class="sp1">Esquisse de personnage</p>
                       <p class="sp3">2011</p>
                   </div>
               </div>
@@ -125,6 +135,13 @@
               loop:false
           });
           lightGallery(document.querySelector('#lightgallery4'), {
+              thumbnail:true,
+              currentPagerPosition: 'middle',
+              download: false,
+              hideControlOnEnd:true,
+              loop:false
+          });
+          lightGallery(document.querySelector('#lightgallery5'), {
               thumbnail:true,
               currentPagerPosition: 'middle',
               download: false,
